@@ -9,6 +9,7 @@
         <div class="container">
             <div class="row">
                <h4>Welcome {{ $nome; }}</h4>
+               <a href="{{route('logout.user')}}">Logout</a>
             </div>
         </div>
 

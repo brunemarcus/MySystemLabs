@@ -11,6 +11,8 @@
         @endif
         @if (session('error'))
             @include('sweetalert::alert')
+        @elseif (session('success'))
+            @include('sweetalert::alert')
         @endif
         @csrf
         <div class="form-group mb-2">

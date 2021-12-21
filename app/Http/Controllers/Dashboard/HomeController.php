@@ -18,6 +18,6 @@ class HomeController extends Controller
             ));
         }
 
-        return redirect('login');
+        return redirect()->intended('/')->with('error', 'Você não está logado no sistema');
     }
 }
