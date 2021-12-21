@@ -5,11 +5,12 @@
     </head>
     <body>
 
+        <!-- Header -->
+        <x-dashboard.navbar></x-dashboard.navbar>
 
         <div class="container">
             <div class="row">
-               <h4>Welcome {{ $nome; }}</h4>
-               <a href="{{route('logout.user')}}">Logout</a>
+               <h4>Welcome</h4>
             </div>
         </div>
 
