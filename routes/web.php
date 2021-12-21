@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\Dashboard\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ Route::get('/', function () {
 
 Route::get('/login', [LoginController::class, 'login']);
 Route::post('/auth', [LoginController::class, 'auth'])->name('auth.user');
+Route::get('/dashboard',[HomeController::class, 'index'])->middleware('auth');

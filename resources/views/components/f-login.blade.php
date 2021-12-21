@@ -9,6 +9,9 @@
                 </ul>
             </div>
         @endif
+        @if (session('error'))
+            @include('sweetalert::alert')
+        @endif
         @csrf
         <div class="form-group mb-2">
             <label for="l-email">Email</label>

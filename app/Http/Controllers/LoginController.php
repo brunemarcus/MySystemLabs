@@ -29,9 +29,11 @@ class LoginController extends Controller
             'password.required' => 'Senha é obrigatório'
         ]);
 
-        if (Auth::attempt(['email' => $request->email, 'password' => $request->password]))
-            dd("usuário logado");
-        else
-            return redirect()->back()->with('danger','E-mail ou senha inválidos');
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+            session(['authUser' => Auth::user()]);
+            return redirect()->intended('dashboard');
+        }
+
+        return redirect()->back()->with('error', 'E-mail ou senha inválidos');
     }
 }
