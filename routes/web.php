@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 
 Route::get('/login', [LoginController::class, 'login']);
+Route::post('/auth', [LoginController::class, 'auth'])->name('auth.user');

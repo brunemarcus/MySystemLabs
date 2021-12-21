@@ -11,6 +11,12 @@
                 color: white;
                 text-align: center;
             }
+
+            .f-login {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         </style>
     </head>
     <body>
@@ -19,7 +25,6 @@
 
         <div class="container">
             <div class="row">
-
                 <!-- Formulário de Login -->
                 <x-f-login></x-f-login>
             </div>
