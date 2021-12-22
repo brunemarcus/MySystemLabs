@@ -4,7 +4,9 @@
         <div id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('logout.user')}}">Logout</a>
+                    <a class="btn btn-outline-primary" role="button" href="{{route('logout.user')}}">
+                        Logout
+                    </a>
                 </li>
             </ul>
         </div>

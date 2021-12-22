@@ -14,7 +14,8 @@ class HomeController extends Controller
         if(Auth::check()) {
             return view('dashboard.home', array(
                 'nome' => Auth::user()->nome,
-                'email' => Auth::user()->email
+                'email' => Auth::user()->email,
+                'type' => Auth::user()->type_profile,
             ));
         }
 
