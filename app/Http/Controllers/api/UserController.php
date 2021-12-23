@@ -21,7 +21,7 @@ class UserController extends Controller
         if(Auth::check()) {
             if(User::findOrFail(Auth::id())->type_profile == 0) {
                 try {
-                    if(User::find($id)->delete())
+                    if(User::find($id)->update(['active' => 0]))
                         return redirect()->intended('/dashboard')->with('success', 'Usuário removido com sucesso!');
 
                     return redirect()->intended('/dashboard')->with('error', 'Erro ao deletar usuário!');

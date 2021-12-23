@@ -5,6 +5,7 @@ namespace App\View\Components\dashboard;
 use Illuminate\View\Component;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Models\Dashboard\Events;
 
 class managercards extends Component
 {
@@ -27,7 +28,8 @@ class managercards extends Component
     {
         return view('components.dashboard.managercards', [
             'students' => User::where('type_profile', '=', 2)->count(),
-            'manager_account' => User::where('type_profile', '=', 1)->count()
+            'manager_account' => User::where('type_profile', '=', 1)->count(),
+            'classroom' => Events::all()->count()
         ]);
     }
 }

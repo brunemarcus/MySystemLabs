@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" style="color:white;">
     <div class="col-4">
         <div class="card" style="background-color:#2fde37;">
             <div class="card-body">
@@ -18,7 +18,7 @@
     <div class="col-4">
         <div class="card" style="background-color:#2488a6;">
             <div class="card-body">
-                <h4 class="card-title">70</h4>
+                <h4 class="card-title">{{$classroom}}</h4>
                 <h5>Classroom</h5>
             </div>
         </div>

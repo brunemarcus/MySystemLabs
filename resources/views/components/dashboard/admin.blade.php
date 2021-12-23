@@ -1,8 +1,8 @@
 <!-- Manager Account -->
 <div class="row">
     <div class="col mb-4">
-        <h4>Manager Account</h4>
-        <a class="btn btn-outline-success" href="#" role="button">
+        <h3>Manager Account</h3>
+        <a class="btn btn-outline-success" href="{{url('/dashboard/aula')}}" role="button">
             Adicionar Aula
         </a>
     </div>

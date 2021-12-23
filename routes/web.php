@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\Dashboard\HomeController;
+use App\Http\Controllers\Dashboard\AulaController;
 use App\Http\Controllers\api\UserController;
+use App\Http\Controllers\api\EventsController;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Auth;
 
@@ -24,8 +26,11 @@ Route::get('/login', [LoginController::class, 'login']);
 Route::get('/logout', [LogoutController::class, 'logout'])->name('logout.user');
 Route::post('/auth', [LoginController::class, 'auth'])->name('auth.user');
 Route::get('/dashboard',[HomeController::class, 'index']);
+Route::get('/dashboard/aula', [AulaController::class, 'index']);
 
 
 Route::prefix('/api')->group(function() {
     Route::get('/delete/user/{id}', [UserController::class, 'DeleteUser'])->name('delete.user');
+    Route::get('/events/all', [EventsController::class, 'getEventsAll']);
+    Route::post('/save/event', [AulaController::class, 'saveEvent']);
 });

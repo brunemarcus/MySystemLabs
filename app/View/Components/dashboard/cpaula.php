@@ -1,14 +1,13 @@
 <?php
 
-namespace App\View\Components\dashboard;
+namespace App\View\Components\Dashboard;
 
 use Illuminate\View\Component;
-use InfyOm\LaravelCalendarEvents\CalendarEvent;
-use InfyOm\LaravelCalendarEvents\CalendarEventRecurrencePattern;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Auth;
 
-class calendario extends Component
+class cpaula extends Component
 {
     /**
      * Create a new component instance.
@@ -27,6 +26,6 @@ class calendario extends Component
      */
     public function render()
     {
-        return view('components.dashboard.calendario');
+        return view('components.dashboard.cpaula');
     }
 }

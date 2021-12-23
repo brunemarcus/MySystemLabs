@@ -32,7 +32,7 @@ class tbuser extends Component
     {
         return view('components.dashboard.tbuser',
             [
-                'userAll' => User::all(),
+                'userAll' => User::all()->where('active', '=', 1),
                 'type' => User::findOrFail(Auth::id())->type_profile
             ]
         );

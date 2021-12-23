@@ -31,7 +31,7 @@
                     @if($type == 0)
                         <td>
                             <a class="btn btn-outline-danger" href="{{route('delete.user',$user->id)}}" role="button">
-                                Excluir Usuário
+                                Desativar Usuário
                             </a>
                         </td>
                     @endif
