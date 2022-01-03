@@ -17,7 +17,10 @@ Aplicação desevolvida com PHP 7 e Laravel 8 para agendar aulas de Karatê, est
     git clone "Repository"
 ```
 
-### Set Up File dotenv
+### Dotenv
+```
+    Set up dotenv
+```
 
 ### Migrates
 ```
@@ -51,7 +54,7 @@ Aplicação desevolvida com PHP 7 e Laravel 8 para agendar aulas de Karatê, est
             <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
         </th>
         <th>
-            <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="CSS3">
+            <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
         </th>
         <th>
             <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Shell Script">
